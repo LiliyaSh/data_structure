@@ -1,27 +1,33 @@
-public class Dog {
-	private String DogName;
-	private	String DogBreed;
-	private int DogAge;
-	
-	private void init (String name, String breed, int age){
-		DogName = name;
-		DogBreed = breed;
-		DogAge = age;
+#include <iostream>
+
+using namespace std;
+
+class Dog {
+private:
+	string dogName;
+	string dogBreed;
+	int dogAge;
+
+	void init(string name, string breed, int age) {
+		dogName = name;
+		dogBreed = breed;
+		dogAge = age;
 	}
-  
-	public void getName() {
-		System.out.println("The dogs name is" + DogName);
+
+public:
+	void getName() {
+		cout << "The dogs name is" + dogName << endl;
 	}
-  
-	public void getBreed() {
-		System.out.println("The dogs breed is" + DogBreed);
+
+	void getBreed() {
+		cout << "The dogs breed is" + dogBreed << endl;
 	}
-  
-	public int getAge() {
-		return DogAge;
+
+	int getAge() {
+		return dogAge;
 	}
-  
-	public void bark() {
-		System.out.println("BARRRRK!");
+
+	void bark() {
+		cout << "WAFFFFF!";
 	}
-}
+};
